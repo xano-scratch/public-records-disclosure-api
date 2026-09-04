@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Records Disclosure API</title>
+    <meta
+      name="description"
+      content="A governed government-records API where a human clerk and an AI agent call one rule to fetch a record, and the same versioned policy decides which fields are released, redacted, or withheld."
+    />
+    <style>
+      :root {
+        --bg: #0a0a0b;
+        --panel: #131316;
+        --panel-2: #1a1a1e;
+        --border: #26262c;
+        --text: #ededf0;
+        --muted: #a1a1aa;
+        --primary: #ededf0;
+        --emerald: #34d399;
+        --amber: #fbbf24;
+        --rose: #fb7185;
+        --radius: 12px;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 600px at 50% -10%, #16181d 0%, var(--bg) 60%);
+        color: var(--text);
+        font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; }
+      .wrap { max-width: 940px; margin: 0 auto; padding: 0 20px; }
+      .hero { padding: 72px 0 28px; text-align: center; }
+      .kicker {
+        display: inline-flex; align-items: center; gap: 8px;
+        border: 1px solid var(--border); border-radius: 999px;
+        padding: 6px 14px; font-size: 13px; color: var(--muted); background: var(--panel);
+      }
+      h1 { font-size: 42px; line-height: 1.1; letter-spacing: -0.02em; margin: 20px 0 12px; }
+      .tagline { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 auto; }
+      .meta { margin: 20px 0 24px; color: var(--muted); font-size: 14px; }
+      .meta strong { color: var(--text); font-weight: 600; }
+      .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 11px 20px; border-radius: 10px; text-decoration: none;
+        font-weight: 600; font-size: 15px; border: 1px solid transparent; transition: all .15s ease;
+      }
+      .btn.primary { background: var(--primary); color: #0a0a0b; }
+      .btn.primary:hover { background: #ffffff; }
+      .btn.ghost { border-color: var(--border); color: var(--text); background: var(--panel); }
+      .btn.ghost:hover { border-color: #3a3a44; background: var(--panel-2); }
+      .shot {
+        margin: 36px 0; border: 1px solid var(--border); border-radius: var(--radius);
+        overflow: hidden; box-shadow: 0 24px 60px -30px rgba(0,0,0,.8);
+      }
+      .shot img { display: block; width: 100%; height: auto; }
+      section { padding: 28px 0; border-top: 1px solid var(--border); }
+      h2 { font-size: 22px; letter-spacing: -0.01em; margin: 0 0 6px; }
+      .lead { color: var(--muted); margin: 0 0 20px; max-width: 700px; }
+      .grid { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+      @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
+      .card { border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); padding: 18px; }
+      .card h3 { margin: 0 0 6px; font-size: 16px; }
+      .card p { margin: 0; color: var(--muted); font-size: 14px; }
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+      th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+      code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+      td .verb { color: var(--emerald); font-weight: 600; }
+      .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+      .pill { border: 1px solid var(--border); border-radius: 8px; padding: 4px 10px; font-size: 13px; color: var(--muted); background: var(--panel); }
+      pre {
+        background: #0e0e11; border: 1px solid var(--border); border-radius: 10px;
+        padding: 16px; overflow-x: auto; margin: 0; color: #d4d4d8;
+      }
+      .note { color: var(--muted); font-size: 13px; }
+      footer { padding: 32px 0 60px; color: var(--muted); font-size: 13px; text-align: center; border-top: 1px solid var(--border); }
+      .dot { color: #3a3a44; margin: 0 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <span class="kicker">Play 4 · Agent Intelligence Layer · Government</span>
+        <h1>Public Records Disclosure API</h1>
+        <p class="tagline">
+          A human clerk and an AI agent call one rule to fetch a record, and the same versioned policy
+          decides which fields are released, redacted, or withheld.
+        </p>
+        <div class="meta">
+          <strong>6</strong> tables <span class="dot">·</span>
+          <strong>9</strong> API endpoints <span class="dot">·</span>
+          <strong>2</strong> shared functions <span class="dot">·</span>
+          <strong>1</strong> agent
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://github.com/xano-scratch/public-records-disclosure-api">View on GitHub</a>
+          <a class="btn ghost" href="#use">Use this template</a>
+        </div>
+      </header>
+
+      <div class="shot">
+        <img
+          src="screenshot.png"
+          alt="The agent console: a plain-language request resolves to one record, then the AI agent path and the human path return an identical disclosure under the same policy version."
+        />
+      </div>
+
+      <section>
+        <h2>What it demonstrates</h2>
+        <p class="lead">
+          Field-level disclosure and redaction, computed in the API layer, never with row-level security.
+          An AI agent is governed exactly like a human clerk, and every access is audited.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>One shared rule</h3>
+            <p>evaluate_disclosure reads the active policy rows and applies (sensitivity, role) to an action. The human endpoint and the agent endpoint both call it, so the answer cannot drift.</p>
+          </div>
+          <div class="card">
+            <h3>Policy as data</h3>
+            <p>The rules are rows in a table, versioned, with one version active. Switch the version and what gets released changes, with the deciding version returned on every read.</p>
+          </div>
+          <div class="card">
+            <h3>Governed agent</h3>
+            <p>The agent maps a plain-language request to one record id, then that record runs through the same rule and the same audit writer. No wider access for the machine.</p>
+          </div>
+          <div class="card">
+            <h3>Full audit</h3>
+            <p>Every retrieval writes one row: who asked, whether a human or an agent, the deciding policy version, and which fields were released versus withheld.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>API surface</h2>
+        <p class="lead">Nine endpoints under one API group, plus two shared functions and one agent.</p>
+        <table>
+          <thead>
+            <tr><th>Verb</th><th>Path</th><th>What it enforces</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="verb">POST</span></td><td class="mono">auth/login</td><td>Verifies the password, mints a role-carrying token.</td></tr>
+            <tr><td><span class="verb">GET</span></td><td class="mono">requests/search</td><td>Auth required. Request headers only, no field values.</td></tr>
+            <tr><td><span class="verb">GET</span></td><td class="mono">records/list</td><td>Auth required. Record headers, optionally by request.</td></tr>
+            <tr><td><span class="verb">GET</span></td><td class="mono">records/releasable/{record_id}</td><td>Human read path. Applies the policy for the caller role, logs a human access.</td></tr>
+            <tr><td><span class="verb">POST</span></td><td class="mono">agent/retrieve</td><td>Agent read path. Resolves plain language to one record, applies the same rule, logs an agent access.</td></tr>
+            <tr><td><span class="verb">GET</span></td><td class="mono">audit/queries</td><td>Clerks and admins only. The full audit trail.</td></tr>
+            <tr><td><span class="verb">GET</span></td><td class="mono">rules/active</td><td>The active policy version and its per-sensitivity rules.</td></tr>
+            <tr><td><span class="verb">POST</span></td><td class="mono">rules/activate</td><td>Admin only. Switches the active policy version.</td></tr>
+            <tr><td><span class="verb">POST</span></td><td class="mono">seed/run</td><td>Public reset and seed, so a fresh deploy is browsable at once.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Screens</h2>
+        <p class="lead">A React frontend that derives every path and type from the query definitions.</p>
+        <div class="pills">
+          <span class="pill">Records: pick a record, see what your role may access</span>
+          <span class="pill">Agent console: ask in plain language, compare the agent and human reads</span>
+          <span class="pill">Audit trail: every human and agent access with its policy version</span>
+          <span class="pill">Policy: the role and sensitivity matrix, switchable by an admin</span>
+        </div>
+      </section>
+
+      <section id="use">
+        <h2>Use this template</h2>
+        <p class="lead">
+          Point your AI coding agent at this repo, or clone it yourself. You need a Xano account and Node
+          20.19 or newer.
+        </p>
+        <pre><code>Set up the Xano backend and React frontend from
+https://github.com/xano-scratch/public-records-disclosure-api
+
+Clone it, run `npm install`, then `npx xanots login` and
+`npm run xano:deploy`. Open the live URL it prints and sign in
+as one of the demo roles.</code></pre>
+        <p class="note" style="margin-top:16px">Or run it by hand:</p>
+        <pre><code>git clone https://github.com/xano-scratch/public-records-disclosure-api
+cd public-records-disclosure-api
+npm install
+npx xanots login
+npm run xano:deploy</code></pre>
+      </section>
+
+      <section>
+        <h2>About the live preview</h2>
+        <p class="lead">
+          Any demo link shared for this template points at an ephemeral Xano environment that expires. If a
+          link has stopped serving, the repo is the durable artifact: clone it and run
+          <code>npm run xano:deploy</code> for a fresh backend and frontend of your own. The deploy seeds its
+          own demo data, so it is browsable right away.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        Public Records Disclosure API · A XanoTS proof template · MIT licensed. Field-level disclosure is
+        computed in the API layer for every caller, human or AI agent, never with row-level security.
+      </div>
+    </footer>
+  </body>
+</html>

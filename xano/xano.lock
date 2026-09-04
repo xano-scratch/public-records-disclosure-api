@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "objects": {
+    "app:records-disclosure": {
+      "guid": "7490627824c0952dc16b8a82e0b104e5",
+      "canonical": "records-disclosure",
+      "canonical_source": "code"
+    },
+    "dbo:access_log": {
+      "guid": "66e4b44a71780b4d9618b0a0e3d962ec"
+    },
+    "dbo:disclosure_rules": {
+      "guid": "d20e9e7ae44975fc89228a7f33c7d029"
+    },
+    "dbo:record_fields": {
+      "guid": "e076251c54a1dcd7fbf73e95b9e74289"
+    },
+    "dbo:records": {
+      "guid": "83698088e49211088d9ab62575548988"
+    },
+    "dbo:requests": {
+      "guid": "3b4fdf26f0e175282161e7db7ba81053"
+    },
+    "dbo:users": {
+      "guid": "157d4a98d979cf04b9ccdb98dfc15229"
+    },
+    "function:evaluate_disclosure": {
+      "guid": "f80265bc8011eccbb2b50c72795fcd12"
+    },
+    "function:log_access": {
+      "guid": "e0a82bafae9efe730c39b2b8f36cf2ae"
+    },
+    "query:records-disclosure|GET|audit/queries": {
+      "guid": "6fe8598fbebeb6437ea9a34dc4765c7c"
+    },
+    "query:records-disclosure|GET|records/list": {
+      "guid": "e0f463a04cbc5de0024da93efedea579"
+    },
+    "query:records-disclosure|GET|records/releasable/{record_id}": {
+      "guid": "ec9bac89d64f92d1a2a295e442385393"
+    },
+    "query:records-disclosure|GET|requests/search": {
+      "guid": "2254798895df7085f6b7930949520527"
+    },
+    "query:records-disclosure|GET|rules/active": {
+      "guid": "b080bea44f744a484ed4bca4d1e9d158"
+    },
+    "query:records-disclosure|POST|agent/retrieve": {
+      "guid": "f6f64a748cf798971ada73ea2aa02ae7"
+    },
+    "query:records-disclosure|POST|auth/login": {
+      "guid": "95b93e50a35a021c4c9d2d69a7329db3"
+    },
+    "query:records-disclosure|POST|rules/activate": {
+      "guid": "34dcd2224779e61c2dd82e4583f6b899"
+    },
+    "query:records-disclosure|POST|seed/run": {
+      "guid": "825e398fac4566406e7c390377fe70a2"
+    },
+    "toolset:record_resolver": {
+      "guid": "635957c39f04a75f778a6e0165492e2e",
+      "canonical": "BP3KRRMw",
+      "canonical_source": "minted"
+    }
+  }
+}
