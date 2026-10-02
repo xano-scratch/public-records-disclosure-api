@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "objects": {
+    "app:Authentication": {
+      "guid": "418bb3d99f5c721ab78c30d97d651e90",
+      "canonical": "authn",
+      "canonical_source": "code"
+    },
+    "app:Records Disclosure": {
+      "guid": "48973999c1a65989d9edabbe2dc8474d",
+      "canonical": "disclosure",
+      "canonical_source": "code"
+    },
+    "dbo:access_log": {
+      "guid": "66e4b44a71780b4d9618b0a0e3d962ec"
+    },
+    "dbo:account": {
+      "guid": "f2f78af06c7c59b550823db5edae97bc"
+    },
+    "dbo:demo_persona": {
+      "guid": "5214cb34a1a30ecfb614ff09d270340e"
+    },
+    "dbo:disclosure_rules": {
+      "guid": "d20e9e7ae44975fc89228a7f33c7d029"
+    },
+    "dbo:event_log": {
+      "guid": "e9148697952846994def7eb0a467d6cd"
+    },
+    "dbo:record_fields": {
+      "guid": "e076251c54a1dcd7fbf73e95b9e74289"
+    },
+    "dbo:records": {
+      "guid": "83698088e49211088d9ab62575548988"
+    },
+    "dbo:requests": {
+      "guid": "3b4fdf26f0e175282161e7db7ba81053"
+    },
+    "dbo:user": {
+      "guid": "efb558104909137dac95907814c26051"
+    },
+    "function:Getting Started Template/create_event_log": {
+      "guid": "19bb274c20b194d7fa03ca4bafb3ac4c"
+    },
+    "function:evaluate_disclosure": {
+      "guid": "f80265bc8011eccbb2b50c72795fcd12"
+    },
+    "function:log_access": {
+      "guid": "e0a82bafae9efe730c39b2b8f36cf2ae"
+    },
+    "query:Authentication|GET|auth/demo/personas": {
+      "guid": "b83e7c6953156d71f59acffa05dc79d2"
+    },
+    "query:Authentication|GET|auth/me": {
+      "guid": "8e64176a70b122ffed0ce68ceed6b9ce"
+    },
+    "query:Authentication|POST|auth/demo": {
+      "guid": "57d4713073de44a5850be77ca2037d16"
+    },
+    "query:Authentication|POST|auth/login": {
+      "guid": "35b7bbd1552626fbc8b7b6c1115c70df"
+    },
+    "query:Authentication|POST|auth/signup": {
+      "guid": "ad508f9d25b77a54e415db5c45d0d8d0"
+    },
+    "query:Records Disclosure|GET|audit": {
+      "guid": "5d37d13a9ca9b7266773b886cd5408ba"
+    },
+    "query:Records Disclosure|GET|records": {
+      "guid": "3a42635a4a5f8501e9ba2844c11c58d1"
+    },
+    "query:Records Disclosure|GET|requests": {
+      "guid": "a1d67255e6925c2a9e83a4410fe9eb6d"
+    },
+    "query:Records Disclosure|GET|requests/{request_id}": {
+      "guid": "566dd7323e618d8738238a4f716869f2"
+    },
+    "query:Records Disclosure|GET|rules": {
+      "guid": "0b3db1d9c8d6373351d51ccc779e7a0a"
+    },
+    "query:Records Disclosure|GET|rules/active": {
+      "guid": "a9af0bc8f91f42e30a0785e9e787d73c"
+    },
+    "query:Records Disclosure|POST|agent/retrieve": {
+      "guid": "a053cbcb8930541e4ce35d954fbd6811"
+    },
+    "query:Records Disclosure|POST|records/retrieve": {
+      "guid": "c17498dda06e918b02bd849b11401304"
+    },
+    "query:Records Disclosure|POST|requests": {
+      "guid": "a778b5e35497ce606235bac35548cf69"
+    },
+    "query:Records Disclosure|POST|requests/{request_id}/status": {
+      "guid": "97c96874da44a5a0943f0c2f049f4f96"
+    },
+    "query:Records Disclosure|POST|rules/activate": {
+      "guid": "c427cf1b1be5ef16aeb27dd9c34950c8"
+    },
+    "toolset:record_resolver": {
+      "guid": "635957c39f04a75f778a6e0165492e2e",
+      "canonical": "record-resolver",
+      "canonical_source": "code",
+      "type": "agent"
+    }
+  }
+}

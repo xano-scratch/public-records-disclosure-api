@@ -1,0 +1,52 @@
+{
+  "source": "file",
+  "origin": "/tmp/tmp.wkwHpFdnCB/bundle.json",
+  "sdkVersion": "0.0.52",
+  "generatedAt": "2026-10-01T22:48:09.533Z",
+  "note": "Written by `xanots generate`. Its presence lets a later `pull`, `generate --force` or `init --from` refresh this tree in place.",
+  "report": {
+    "headline": "",
+    "total": 0,
+    "bySeverity": {
+      "error": 0,
+      "warning": 0,
+      "notice": 0
+    },
+    "byAudience": {
+      "workspace": 0,
+      "modelling": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "files": [
+    "_shared.ts",
+    ".env.example",
+    "index.ts",
+    "query/authentication.ts",
+    "query/authentication/auth_login_POST.ts",
+    "query/authentication/auth_me_GET.ts",
+    "query/authentication/auth_signup_POST.ts",
+    "README.md",
+    "routes.gen.ts",
+    "table/account.ts",
+    "table/event_log.ts",
+    "table/user.ts",
+    "workspace.ts"
+  ],
+  "digests": {
+    "_shared.ts": "01424a6dbd42557e1676ac6ef25aa02b",
+    ".env.example": "eaf4403ddb3cdb1131b779450d4bc36e",
+    "index.ts": "2ca86cd9a63435a185689dc721f9f04c",
+    "query/authentication.ts": "de5431f6d001b8cc10e420a37ee6e691",
+    "query/authentication/auth_login_POST.ts": "3e7ae6d5131fc3034cf97de2aa582d52",
+    "query/authentication/auth_me_GET.ts": "d3a80ef136313ee194f5674252e9adf7",
+    "query/authentication/auth_signup_POST.ts": "9e3ac709cd723d97da5778242418f984",
+    "README.md": "337bf26d9d38216b8fd6bad0b6569594",
+    "routes.gen.ts": "7d4d99e70100ac664d7a9b1a9d7708d4",
+    "table/account.ts": "e2caa9982046206089051bc6359b3852",
+    "table/event_log.ts": "c24303dd7eeb2299dc69fb39ae06b2cd",
+    "table/user.ts": "934dc7792abcc657e88e96ef64007306",
+    "workspace.ts": "b7a916a0712a1c40c921122a87f64d6f"
+  }
+}
