@@ -28,3 +28,4 @@ qa/
 # across renames and environments. Every build writes it. Commit it — ignoring
 # it means each build mints identities that are thrown away and re-invented.
 xano.profile.json
+.github/workflows/
